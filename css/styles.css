@@ -366,9 +366,10 @@ align-items: center;
  }
 
  .portfolio-item:hover .portfolio-wrap {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+        0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+        0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+        transform: translateY(0%);
  }
 
 .portfolio-wrap {
@@ -400,8 +401,13 @@ align-items: center;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-left: 32px;
-    padding-top: 40px;
+    padding: 40px 32px;
+    position: absolute;
+    top: 0;
+    background-color: #4D5AE5;
+    width: 100%;
+    height: 100%;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .apps-container {
@@ -432,6 +438,7 @@ align-items: center;
     background-color: #2E2F42;
     padding: 100px 0;
     display: flex;
+    align-items: baseline;
 }
 .footer-name {
     display: flex;
@@ -441,6 +448,7 @@ align-items: center;
 .footer-container {
     display: block;
     flex-direction: column;
+    margin-right: 120px;
 }
 
 .footer-logo {
@@ -498,9 +506,7 @@ align-items: center;
 
 .footer-media {
     display: flex;
-    align-items: baseline;
     flex-direction: column;
-    margin-right: 120px;
 }
 
 .footer-link {
