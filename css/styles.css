@@ -374,11 +374,7 @@ align-items: center;
     border: 1px solid #E7E9FC;
     position: relative;
     overflow: hidden;
-}
-
-.portfolio-wrap:hover .overlay {
-    transform: translateY(0);
-}       
+}      
 
 .portfolio-cover-text {
     color: #F4F4FD;
