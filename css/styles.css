@@ -436,7 +436,6 @@ align-items: center;
 
 .name-container{
     display: flex;
-    gap: 120px;
     align-items: baseline;
 }
 
